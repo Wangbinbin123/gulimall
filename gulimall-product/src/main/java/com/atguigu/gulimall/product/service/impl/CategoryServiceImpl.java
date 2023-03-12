@@ -46,7 +46,6 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
     public List<CategoryEntity> listWithTree() {
         //1.查出所有分类
        List<CategoryEntity> entities = baseMapper.selectList(null);
-
         //2.组装成父子的树形结构
         //找到所有的一级分类
 
